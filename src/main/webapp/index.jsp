@@ -1,24 +1,54 @@
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-</head>
-<body>
-<h1>Employees List</h1>  
-<a href="showEmployeeForm">Add</a>
-<table border="2" width="70%" cellpadding="2">  
-<tr><th>Id</th><th>Name</th><th>Gender</th><th>Edit</th><th>Delete</th>  
-   <c:forEach var="emp" items="${list}">   
-   <tr>  
-   <td>${emp.id}</td>  
-   <td>${emp.name}</td>  
-   <td>${emp.gender}</td>
-   <td><a href="editEmp?id=${emp.id}">Edit</a></td>
-   <td><a href="deleteEmp?id=${emp.id}">Delete</a></td>  
-   </tr>  
-   </c:forEach>  
-</table>
-</body>
-</html>
+
+
+
+
+<script src="resources/js/script.js"></script>
+<jsp:include page="body.jsp"></jsp:include>
+
+
+<section id="tableSession">
+	<div class="container">
+		<h1>Employees List</h1>
+		<a id="addEmployee" href="showEmployeeForm"><i class="fa fa-tags"
+			style="font-size: 24px"></i> Add more student</a>
+		<table id="employeeTable">
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Gender</th>
+				<th>Edit</th>
+				<th>Delete</th>
+				<c:forEach var="emp" items="${list}">
+					<tr>
+						<td>${emp.id}</td>
+						<td>${emp.name}</td>
+						<td>${emp.gender}</td>
+						<td><a href="editEmp?id=1"><i
+								class="fa fa-pencil-square" style="font-size: 24px"></i></a></td>
+						<td><a href="deleteEmp?id=${emp.id}"><i
+								class="fa fa-trash-o" style="font-size: 24px"></i></a></td>
+					</tr>
+					<tr>
+						<td>${emp.id}</td>
+						<td>${emp.name}</td>
+						<td>${emp.gender}</td>
+						<td><a href="editEmp?id=${emp.id}"><i
+								class="fa fa-pencil-square" style="font-size: 24px"></i></a></td>
+						<td><a href="deleteEmp?id=${emp.id}"><i
+								class="fa fa-trash-o" style="font-size: 24px"></i></a></td>
+					</tr>
+					<tr>
+						<td>${emp.id}</td>
+						<td>${emp.name}</td>
+						<td>${emp.gender}</td>
+						<td><a href="editEmp?id=${emp.id}"><i
+								class="fa fa-pencil-square" style="font-size: 24px"></i></a></td>
+						<td><a href="deleteEmp?id=${emp.id}"><i
+								class="fa fa-trash-o" style="font-size: 24px"></i></a></td>
+					</tr>
+				</c:forEach>
+		</table>	
+	</div>
+</section>
+
+

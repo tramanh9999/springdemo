@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-
 @ComponentScan("thaott.demo.*")
 public class ApplicationContextConfig {
 	

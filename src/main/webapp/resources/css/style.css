@@ -1,0 +1,232 @@
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin:0;
+    padding: 0;
+}
+
+/*Header*/
+header {
+    background: #35424a;
+    color: white;
+    padding-top:30px;
+    min-height: 70px;
+    border-bottom: #339933 5px solid;
+}
+
+header a {
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .5s;
+}
+
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float:left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #339933;
+    font-weight: bold;
+}
+
+header a:hover {
+     color: lightgreen;
+     text-shadow: 2px 2px 4px #000000;
+}
+
+
+/*showcase*/
+#showcase {
+    min-height: 400px;
+    background: url('../img/wallhaven-690680.jpg') no-repeat;
+    background-position: center;
+    background-position-y: -400px;
+    background-attachment: fixed;
+    text-align: center;
+    color: white; 
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+
+/*table*/
+#tableSession{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#tableSession h1 {
+    color: #4CAF50;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #267326;
+    
+}
+
+#addEmployee {
+    color: #003300;
+    font-size: 24px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+#addEmployee:hover {
+    color: #4CAF50;
+}
+
+#employeeTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#employeeTable td, th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#employeeTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#employeeTable tr:hover {
+    background-color: #ddd;
+}
+
+#employeeTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#employeeTable tr a {
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+
+#employeeTable tr a:hover {
+    color: #339933;
+}
+
+label {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#inputForm {
+    margin: auto 30%;
+    margin-bottom: 50px;
+}
+
+#inputForm h1 {
+    color: #4CAF50;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #267326;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin: 8px 20px;
+    padding-top: 20px;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 16px 0px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/*footer*/
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #339933;
+    text-align: center;
+}
+
+
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li
+    {
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+}
+
