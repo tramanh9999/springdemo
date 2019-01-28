@@ -11,8 +11,6 @@ public class Employee {
 		this.pr = pr;
 	}
 
-	
-	
 	public Employee(Integer id, String name, Boolean gender) {
 		this.id = id;
 		this.name = name;

@@ -23,8 +23,8 @@
 						<td>${emp.id}</td>
 						<td>${emp.name}</td>
 						<td>${emp.gender}</td>
-						<td><a href="editEmp?id=1"><i
-								class="fa fa-pencil-square" style="font-size: 24px"></i></a></td>
+						<td><a href="editEmp?id=1"><i class="fa fa-pencil-square"
+								style="font-size: 24px"></i></a></td>
 						<td><a href="deleteEmp?id=${emp.id}"><i
 								class="fa fa-trash-o" style="font-size: 24px"></i></a></td>
 					</tr>
@@ -47,7 +47,7 @@
 								class="fa fa-trash-o" style="font-size: 24px"></i></a></td>
 					</tr>
 				</c:forEach>
-		</table>	
+		</table>
 	</div>
 </section>
 
