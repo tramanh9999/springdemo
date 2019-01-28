@@ -5,17 +5,24 @@ public class Employee {
 	private String name;
 	private Boolean gender;
 
-	private IPerson pr;
-
-	public Employee(IPerson pr) {
-		this.pr = pr;
-	}
+	
 
 	public Employee(Integer id, String name, Boolean gender) {
 		this.id = id;
 		this.name = name;
 		this.gender = gender;
 	}
+
+	
+	
+	
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+
 
 	public Integer getId() {
 		return id;
