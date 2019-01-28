@@ -4,10 +4,14 @@ public class Employee {
 	private Integer id;
 	private String name;
 	private Boolean gender;
-	
-	public Employee() {
-		
+
+	private IPerson pr;
+
+	public Employee(IPerson pr) {
+		this.pr = pr;
 	}
+
+	
 	
 	public Employee(Integer id, String name, Boolean gender) {
 		this.id = id;
@@ -38,8 +42,5 @@ public class Employee {
 	public void setGender(Boolean gender) {
 		this.gender = gender;
 	}
-	
-	
-	
-	
+
 }
